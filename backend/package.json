@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --exec tsx src/index.ts",
+    "seed": "tsx src/scripts/seed.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,14 +18,18 @@
     "dotenv": "^17.4.2",
     "ephemeris": "^2.2.0",
     "express": "^5.2.1",
+    "geo-tz": "^8.1.8",
+    "moment-timezone": "^0.6.3",
     "mongoose": "^9.8.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/moment-timezone": "^0.5.13",
     "@types/node": "^26.1.1",
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
+    "tsx": "^4.23.1",
     "typescript": "^7.0.2"
   }
 }
